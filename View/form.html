@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir títulos</title>
+</head>
+<body>
+    <h1>Cadastre o livro</h1>
+    <form action="../Model/includedb.php" method="post">
+        <label for="book_name">Título</label>
+        <input type="text" id="book_name" name="book_name">
+        <label for="book_ISBN">ISBN</label>
+        <input type="text" id="book_ISBN" name="book_ISBN">
+        <label for="book_author">Autor</label>
+        <input type="text" id="book_author" name="book_author">
+        <label for="book_pages">Número de páginas</label>
+        <input type="text" id="book_pages" name="book_pages">
+        <label for="book_cover">Capa do livro</label>
+        <input type="file" id="book_cover" name="book_cover">
+
+        <input type="submit">
+    </form>
+</body>
+</html>
