@@ -1,0 +1,2 @@
+Até agora todos os projetos em PHP que eu fiz saíram de um curso, decidi tentar replicar algo na mesma linha, mas sem a ajuda desses cursos, para buscar um desenvolvimento maior e melhorar meus conhecimentos.
+Dito isto, esse é um crud bem básico que pretendo ir melhorando com o passar dos dias. 
