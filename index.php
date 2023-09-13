@@ -2,6 +2,8 @@
 require_once './Model/database/database.php';
 $conn = conndb();
 
+$files = './assets/imgs/'
+
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +55,7 @@ $stmt->execute();
                 <td><?= $result['book_author']?></td>
                 <td><?= $result['book_ISBN']?></td>
                 <td><?= $result['book_pages']?></td>
-                <td><img src="<?= $result['book_cover']?>" alt="capa do livro"></td>
+                <td><img src="<?= $files. $result['book_cover']?>" alt="capa do livro"></td>
                 <td><a href="./View/form_altera.php?code_book=<?=$result['code_book']?>">Alterar</a></td>
                 <td><a href="./Model/excluir.php?code_book=<?=$result['code_book']?>" onclick="return confirm('Você tem certeza que deseja excluir esse livro?')">Excluir</a></td>
             </tr>

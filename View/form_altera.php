@@ -23,7 +23,7 @@ $result = $stmt->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
     <h1>Alterar títulos</h1>
-<form action="../Model/altera.php" method="post">
+<form action="../Model/altera.php" method="post" enctype="multipart/form-data">
         <label for="book_name">Título</label>
         <input type="text" id="book_name" name="book_name" value="<?= $result['book_name']?>">
         <label for="book_ISBN">ISBN</label>
