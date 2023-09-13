@@ -18,7 +18,7 @@ $book_cover = $_FILES['book_cover'];
     $stmt->bindParam(':book_pages', $book_pages);
     $stmt->bindParam(':book_cover', $book_cover['name']);
     
-    print_r(uploadImage($book_cover));
+    uploadImage($book_cover);
 
     if($stmt->execute()){
         header('Location: ../index.php');
